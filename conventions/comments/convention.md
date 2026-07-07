@@ -22,17 +22,4 @@ A section starts with `[>]` and ends with `[<]`, both carry the section name. Ne
 
 ## Example
 
-```
-foo 123         #[where] $ man 5 foo
-param=foo       #[why] foo over bar: better DX
-cmd -f          #[what] -f means foo ()
-#>[why]
-#   foo over bar: better DX
-#/[why]
-##[>] section 🤖🤖
-foo_a=1
-###[>] subsection
-bar_a=1
-###[<] subsection
-##[<] section 🤖🤖
-```
+Commented files in `example/`: `example.go` (leader `//`), `example.zsh` (leader `#`). Inline, block, and section forms, 🤖 marks.
