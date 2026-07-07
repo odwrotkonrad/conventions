@@ -23,6 +23,7 @@ Read the convention docs in `conventions/<topic>/`:
 - `conventions/makefile/`: house Makefile style.
 - `conventions/templates/`: generating repo docs with che templates.
 - `conventions/ci/`: lefthook pre-commit hooks, re-run in CI.
+- `conventions/license/`: MIT `LICENSE` in every public repo.
 
 `make render-templates` regenerates `assets/data/makefile.agents.md`, `assets/data/repo-structure.md`, `CLAUDE.md`, `AGENTS.md` via che, the same setup consuming repos replicate.
 

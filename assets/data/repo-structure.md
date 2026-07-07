@@ -7,6 +7,8 @@ conventions
     example
   comments
     example
+  license
+    example
   makefile
     example
       assets
