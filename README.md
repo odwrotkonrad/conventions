@@ -6,13 +6,15 @@ Canonical repo conventions: purpose docs, commenting, Makefile style.
 
 Repo conventions lived scattered inside `configs`. This repo is their canonical home: one place to author, version, and reference them. Every repo follows the same purpose doc structure, comment notation, and Makefile shape, so agents and humans onboard onto any repo from the same short docs.
 
-Static files only, no Makefile, no templating. Future: `assets/docs-human/` variants, che templating once generated content appears, all repos consuming conventions from here.
+`make render-templates` regenerates `assets/data/makefile.agents.md` via che. Future: `docs-human` variants, all repos consuming conventions from here.
 
 ## Conventions
 
-- [Purpose](assets/docs-agents/purpose-convention.md): every repo carries `assets/docs-agents/purpose.md`, included at the top of `AGENTS.md`, `CLAUDE.md`, `README.md`.
-- [Commenting](assets/docs-agents/commenting-convention.md): comment prefixes, sectioning, AI-generated marks.
-- [Makefile](assets/docs-agents/makefile-convention.md): house Makefile style.
+- [Purpose](conventions/purpose/convention.md): every repo carries `assets/docs-agents/purpose.md`, included at the top of `AGENTS.md`, `CLAUDE.md`, `README.md`.
+- [Comments](conventions/comments/convention.md): comment prefixes, sectioning, AI-generated marks.
+- [Makefile](conventions/makefile/convention.md): house Makefile style.
+- [Templates](conventions/templates/convention.md): generating repo docs with che templates.
+- [CI](conventions/ci/convention.md): lefthook pre-commit hooks, re-run in CI.
 
 ## License
 
