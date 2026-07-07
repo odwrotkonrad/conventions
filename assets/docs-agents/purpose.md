@@ -22,6 +22,7 @@ Read the convention docs in `conventions/<topic>/`:
 - `conventions/comments/`: comment prefixes, sectioning, AI-generated marks.
 - `conventions/makefile/`: house Makefile style.
 - `conventions/templates/`: generating repo docs with che templates.
+- `conventions/ci/`: lefthook pre-commit hooks, re-run in CI.
 
 `make render-templates` regenerates `assets/data/makefile.agents.md`, `assets/data/repo-structure.md`, `CLAUDE.md`, `AGENTS.md` via che, the same setup consuming repos replicate.
 

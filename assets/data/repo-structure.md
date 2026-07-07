@@ -3,6 +3,8 @@ assets
   data
   docs-agents
 conventions
+  ci
+    example
   comments
     example
   makefile

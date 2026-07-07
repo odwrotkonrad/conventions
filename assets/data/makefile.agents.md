@@ -4,3 +4,8 @@
 ### Docs:
 
 `render-templates` render *.repo.tpl onto the repo (makefile.agents.md, repo-structure.md, CLAUDE.md, AGENTS.md)
+
+### CI:
+
+`run-repo-ci-prepare-hooks` install lefthook git hooks
+`run-repo-ci-precommit-all`: `run-repo-ci-prepare-hooks` run pre-commit hooks over all files (not just staged)

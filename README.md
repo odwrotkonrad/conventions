@@ -14,6 +14,7 @@ Repo conventions lived scattered inside `configs`. This repo is their canonical 
 - [Comments](conventions/comments/convention.md): comment prefixes, sectioning, AI-generated marks.
 - [Makefile](conventions/makefile/convention.md): house Makefile style.
 - [Templates](conventions/templates/convention.md): generating repo docs with che templates.
+- [CI](conventions/ci/convention.md): lefthook pre-commit hooks, re-run in CI.
 
 ## License
 
