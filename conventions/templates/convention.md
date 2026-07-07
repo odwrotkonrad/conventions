@@ -5,7 +5,7 @@ Repo docs are generated, not hand-written: che renders `*.repo.tpl` templates on
 ## Layout
 
 - Templates live in `templates/`, in ordered subdirs: `1-env` (env vars, secrets), `2-data` (intermediate data docs), `3-audience` (target-audience renders: agent files, README).
-- Generated data docs land in `assets/data/` (`makefile.agents.md`, `repo-structure.md`), included via `@` in `CLAUDE.md` and `AGENTS.md`.
+- Generated data docs land in `assets/data/`, included via `@` in `CLAUDE.md` and `AGENTS.md`. Every repo generates two: `makefile.agents.md` (from `templates/2-data/makefile-agents.md.repo.tpl`, `renderMakefileDoc`) and `repo-structure.md` (from `templates/2-data/repo-structure.md.repo.tpl`, `renderDirsTree`).
 - `CLAUDE.md` and `AGENTS.md` themselves render from one `templates/3-audience/AGENTS.md.repo.tpl`: `CLAUDE.md` keeps `@`-includes, `AGENTS.md` renders them inline (`renderReferencedFiles: true`) for agents that do not resolve `@`.
 
 ## Example
@@ -19,6 +19,6 @@ Runnable version in `example/`: `che.yml`, `Makefile`, all three template subdir
 ## Authoring
 
 - Prefer gomplate built-in functions over custom plugins or scripts.
-- che funcs cover repo docs: `renderMakefileDoc "Makefile"` harvests `[genai-include]` Makefile sections.
+- che funcs cover repo docs: `renderMakefileDoc "Makefile"` harvests `[genai-include]` Makefile sections, `renderDirsTree` emits the tracked-file directory tree for `repo-structure.md`.
 - `remoteFile "gitlab.com/konradodwrot/conventions//conventions/comments/convention.md"` inlines a file from any git repo at render time. One string, go-getter style: `<repo>//<path>[?ref=<branch|tag>]`, default branch when `ref` is omitted, https first with ssh-agent fallback for private repos. `3-audience` templates pull convention docs this way, refreshed on every render.
 - `op://` secret refs resolve at render time (env templates), never commit resolved values.

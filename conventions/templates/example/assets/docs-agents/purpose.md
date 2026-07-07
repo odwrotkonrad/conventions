@@ -15,7 +15,7 @@ Example repo showing the templates convention.
 
 ## How To Use
 
-`make render-templates` renders `*.repo.tpl` onto the repo: `.env` (op:// refs resolved), `assets/data/makefile.agents.md`, `CLAUDE.md`, `AGENTS.md`.
+`make render-templates` renders `*.repo.tpl` onto the repo: `.env` (op:// refs resolved), `assets/data/makefile.agents.md`, `assets/data/repo-structure.md`, `CLAUDE.md`, `AGENTS.md`.
 
 ## Future Direction
 
