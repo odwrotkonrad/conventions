@@ -28,6 +28,7 @@ Read the convention docs in `conventions/<topic>/`:
 - `conventions/makefile/`: house Makefile style.
 - `conventions/templates/`: generating repo docs with che templates.
 - `conventions/ci/`: lefthook pre-commit hooks, re-run in CI.
+- `conventions/license/`: MIT `LICENSE` in every public repo.
 
 `make render-templates` regenerates `assets/data/makefile.agents.md`, `assets/data/repo-structure.md`, `CLAUDE.md`, `AGENTS.md` via che, the same setup consuming repos replicate.
 
@@ -42,6 +43,7 @@ Read the convention docs in `conventions/<topic>/`:
 - `conventions/makefile/convention.md`: house Makefile style, `[genai-include]` sectioning that feeds the generated Makefile doc for AI agents.
 - `conventions/templates/convention.md`: generating repo docs with che templates: `templates/1-env|2-data|3-audience`, `che.yml` wiring, `make render-templates`.
 - `conventions/ci/convention.md`: lefthook pre-commit hooks (minimal: docs generation check), re-run in a minimal CI validate job.
+- `conventions/license/convention.md`: every public repo carries `LICENSE` (unmodified MIT, creation-year copyright), private repos carry none.
 
 Each convention dir carries a runnable `example/`. This repo itself follows all of these conventions.
 
@@ -67,6 +69,8 @@ conventions
   ci
     example
   comments
+    example
+  license
     example
   makefile
     example
