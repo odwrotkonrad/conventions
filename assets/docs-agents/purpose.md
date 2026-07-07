@@ -14,19 +14,3 @@ Repo conventions (purpose docs, commenting, Makefile style) for all user project
 - Consistent structure across all repos: same purpose doc, same comment notation, same Makefile shape.
 - Agents and humans onboard onto any repo from the same short docs.
 
-## How To Use
-
-Read the convention docs in `conventions/<topic>/`:
-
-- `conventions/purpose/`: every repo carries a purpose doc, included at the top of `AGENTS.md`, `CLAUDE.md`, `README.md`.
-- `conventions/comments/`: comment prefixes, sectioning, AI-generated marks.
-- `conventions/makefile/`: house Makefile style.
-- `conventions/templates/`: generating repo docs with che templates.
-- `conventions/ci/`: lefthook pre-commit hooks, re-run in CI.
-- `conventions/license/`: MIT `LICENSE` in every public repo.
-
-`make render-templates` regenerates `assets/data/makefile.agents.md`, `assets/data/repo-structure.md`, `CLAUDE.md`, `AGENTS.md` via che, the same setup consuming repos replicate.
-
-## Future Direction
-
-- `assets/docs-human/` variants of each convention.

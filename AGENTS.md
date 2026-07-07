@@ -19,26 +19,9 @@ Repo conventions (purpose docs, commenting, Makefile style) for all user project
 - Consistent structure across all repos: same purpose doc, same comment notation, same Makefile shape.
 - Agents and humans onboard onto any repo from the same short docs.
 
-## How To Use
-
-Read the convention docs in `conventions/<topic>/`:
-
-- `conventions/purpose/`: every repo carries a purpose doc, included at the top of `AGENTS.md`, `CLAUDE.md`, `README.md`.
-- `conventions/comments/`: comment prefixes, sectioning, AI-generated marks.
-- `conventions/makefile/`: house Makefile style.
-- `conventions/templates/`: generating repo docs with che templates.
-- `conventions/ci/`: lefthook pre-commit hooks, re-run in CI.
-- `conventions/license/`: MIT `LICENSE` in every public repo.
-
-`make render-templates` regenerates `assets/data/makefile.agents.md`, `assets/data/repo-structure.md`, `CLAUDE.md`, `AGENTS.md` via che, the same setup consuming repos replicate.
-
-## Future Direction
-
-- `assets/docs-human/` variants of each convention.
-
 # Conventions
 
-- `conventions/purpose/convention.md`: every repo carries `assets/docs-agents/purpose.md` with five headings (what, why, goals, usage, future), included at the top of `AGENTS.md`, `CLAUDE.md`, `README.md`.
+- `conventions/purpose/convention.md`: every repo carries `assets/docs-agents/purpose.md` with three headings (what, why, goals), included at the top of `AGENTS.md`, `CLAUDE.md`, `README.md`.
 - `conventions/comments/convention.md`: comment label prefixes (`[where]`, `[why]`, `[what]`), `[>]`/`[<]` sectioning, 🤖 AI-generated marks.
 - `conventions/makefile/convention.md`: house Makefile style, `[genai-include]` sectioning that feeds the generated Makefile doc for AI agents.
 - `conventions/templates/convention.md`: generating repo docs with che templates: `templates/1-env|2-data|3-audience`, `che.yml` wiring, `make render-templates`.

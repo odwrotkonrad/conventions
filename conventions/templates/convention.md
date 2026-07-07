@@ -19,6 +19,6 @@ Runnable version in `example/`: `che.yml`, `Makefile`, all three template subdir
 ## Authoring
 
 - Prefer gomplate built-in functions over custom plugins or scripts.
-- che funcs cover repo docs: `renderMakefileDoc "Makefile"` harvests `[genai-include]` Makefile sections, `renderDirsTree` emits the tracked-file directory tree for `repo-structure.md`.
+- che funcs cover repo docs: `renderMakefileDoc "Makefile"` harvests `[genai-include]` Makefile sections, `renderDirsTree` emits the tracked-file directory tree for `repo-structure.md`, `renderRepoGroupIndex "<dir>"` emits a subgroup's repo-index (direct child repos with inlined purpose, direct child subgroups linked to their own index) for `repo-index.md`.
 - `remoteFile "gitlab.com/konradodwrot/conventions//conventions/comments/convention.md"` inlines a file from any git repo at render time. One string, go-getter style: `<repo>//<path>[?ref=<branch|tag>]`, default branch when `ref` is omitted, https first with ssh-agent fallback for private repos. `3-audience` templates pull convention docs this way, refreshed on every render.
 - `op://` secret refs resolve at render time (env templates), never commit resolved values.

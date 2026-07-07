@@ -13,10 +13,3 @@ Example repo showing the templates convention.
 - Show the `che.yml` wiring for `.env` and agent files.
 - Show the `templates/` layout: `1-env`, `2-data`, `3-audience`.
 
-## How To Use
-
-`make render-templates` renders `*.repo.tpl` onto the repo: `.env` (op:// refs resolved), `assets/data/makefile.agents.md`, `assets/data/repo-structure.md`, `CLAUDE.md`, `AGENTS.md`.
-
-## Future Direction
-
-Static example, tracks the convention.
