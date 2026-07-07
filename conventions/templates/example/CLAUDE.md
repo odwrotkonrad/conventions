@@ -33,3 +33,7 @@ Commented files in `example/`: `example.go` (leader `//`), `example.zsh` (leader
 
 
 @assets/data/makefile.agents.md
+
+## Directory Tree
+
+@assets/data/repo-structure.md

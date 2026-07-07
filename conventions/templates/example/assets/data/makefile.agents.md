@@ -3,4 +3,4 @@
 
 ### Docs:
 
-`render-templates` render *.repo.tpl onto the repo (.env, makefile.agents.md, CLAUDE.md, AGENTS.md)
+`render-templates` render *.repo.tpl onto the repo (.env, makefile.agents.md, repo-structure.md, CLAUDE.md, AGENTS.md)
