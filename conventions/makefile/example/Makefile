@@ -28,7 +28,7 @@ build:
 ##[<] Go
 
 ##[>] Docs [genai-include]
-#[what] render *.repo.tpl onto the repo (makefile.agents.md)
+#[what] render *.ontoRepo.tpl onto the repo (makefile.agents.md)
 render-templates:
-	@che render-templates --repo
+	@che render-templates
 ##[<] Docs

@@ -2,7 +2,7 @@
 
 ## Sectioning (makefile docs autogeneration)
 
-Sectioning is what allows the Makefile doc for AI agents to be generated. Targets are grouped in `##[>] Section [genai-include]` ... `##[<] Section` blocks, `[genai-include]` marks sections harvested into generated `assets/data/makefile.agents.md` (via `templates/2-data/makefile-agents.md.repo.tpl` + che), included in `CLAUDE.md` and `AGENTS.md`.
+Sectioning is what allows the Makefile doc for AI agents to be generated. Targets are grouped in `##[>] Section [genai-include]` ... `##[<] Section` blocks, `[genai-include]` marks sections harvested into generated `assets/data/makefile.agents.md` (via `templates/2-data/makefile-agents.md.ontoRepo.tpl` + che), included in `CLAUDE.md` and `AGENTS.md`.
 
 - Every target preceded by a `#[what]` one-liner.
 - Env vars documented with `#[what]` + `#[vals]` above their `export`.
@@ -19,4 +19,4 @@ Sectioning is what allows the Makefile doc for AI agents to be generated. Target
 
 ## Example
 
-Runnable version in `example/`: `Makefile` (env var, wrapper, commands), `che.yml`, `templates/2-data/makefile-agents.md.repo.tpl`, generated `assets/data/makefile.agents.md`.
+Runnable version in `example/`: `Makefile` (env var, wrapper, commands), `che.yml`, `templates/2-data/makefile-agents.md.ontoRepo.tpl`, generated `assets/data/makefile.agents.md`.
