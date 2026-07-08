@@ -1,7 +1,8 @@
 ontoRepo:
+  options: {mixinOnly: true}
   include:
-    repoTemplate:
+    renderTemplates:
       - files:
-          - source: templates/2-data/makefile-agents.md.repo.tpl
+          - source: templates/2-data/makefile-agents.md.ontoRepo.tpl
             dest:
               - {path: assets/data/makefile.agents.md}
