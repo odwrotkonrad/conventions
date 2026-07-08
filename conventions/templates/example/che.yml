@@ -1,4 +1,4 @@
-repo:
+ontoRepo:
   include:
     repoTemplate:
       - files:

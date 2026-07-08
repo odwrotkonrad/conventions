@@ -14,7 +14,7 @@ Runnable version in `example/`: `che.yml`, `Makefile`, all three template subdir
 
 ## Wiring
 
-`che.yml` maps each template source to its dest paths, see `example/che.yml`. Rendered via the Makefile `render-templates` target: `che render-templates --repo`.
+`che.yml` maps each template source to its dest paths, see `example/che.yml`. All `repoTemplate` entries live in one dedicated `ontoRepo` profile: host profiles carry no `repoTemplate`, `ontoRepo` carries no host op (link, copy, template, mkdirs, runScripts, services). Rendered via the Makefile `render-templates` target: `che render-templates --repo`.
 
 ## Authoring
 
