@@ -30,5 +30,5 @@ build:
 ##[>] Docs [genai-include]
 #[what] render *.ontoRepo.tpl onto the repo (makefile.agents.md)
 render-templates:
-	@che render-templates --profile=ontoRepo
+	@che render-templates
 ##[<] Docs

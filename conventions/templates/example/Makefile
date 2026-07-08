@@ -8,5 +8,5 @@ COMMANDS := render-templates
 ##[>] Docs [genai-include]
 #[what] render *.ontoRepo.tpl onto the repo (.env, makefile.agents.md, CLAUDE.md, AGENTS.md)
 render-templates:
-	@che render-templates --profile=ontoRepo
+	@che render-templates
 ##[<] Docs
