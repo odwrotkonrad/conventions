@@ -5,6 +5,8 @@ assets
 conventions
   ci
     example
+  claude-agents
+    example
   comments
     example
   license
