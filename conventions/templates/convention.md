@@ -14,7 +14,7 @@ Runnable version in `example/`: `che.yml`, `Makefile`, all three template subdir
 
 ## Wiring
 
-`che.yml` maps each template source to its dest paths under one `renderTemplates:` key, see `example/che.yml`. The dest path decides the target: relative renders into the repo, `~/` or absolute onto the host. Template extensions are informational: `*.ontoRepo.tpl` (repo dests), `*.ontoHost.tpl` (host dests), bare `*.tpl`. Repo-doc entries live in one dedicated `ontoRepo` profile with `options: {autoExec: true}` (profiles default to `autoExec: false`, running only when named via `--profile`). Rendered via the Makefile `render-templates` target: `che render-templates`.
+`che.yml` maps each template source to its dest paths under one `renderTemplates:` key, see `example/che.yml`. The dest path decides the target: relative renders into the repo, `~/` or absolute onto the host. Template extensions are informational: `*.ontoRepo.tpl` (repo dests), `*.ontoHost.tpl` (host dests), bare `*.tpl`. Repo-doc entries live in one dedicated `ontoRepo` profile with `options: {autoDiscover: true}` (profiles default to `autoDiscover: false`, running only when named via `--profile`). Rendered via the Makefile `render-templates` target: `che render-templates`.
 
 ## Authoring
 

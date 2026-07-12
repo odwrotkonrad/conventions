@@ -1,5 +1,5 @@
 ontoRepo:
-  options: {autoExec: true}
+  options: {autoDiscover: true}
   include:
     renderTemplates:
       - files:

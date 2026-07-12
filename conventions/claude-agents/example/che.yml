@@ -1,5 +1,5 @@
 claude-agents:
-  options: {autoExec: true, execIf: ['builtin:isVirt']}
+  options: {autoDiscover: true, execIf: ['builtin:isVirt']}
   include:
     renderTemplates:
       - ctx: {repo: Notes}
