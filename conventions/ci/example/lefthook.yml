@@ -5,5 +5,5 @@ extends:
 pre-commit:
   jobs:
     - name: docsgen
-      run: make render-templates && git add assets/data CLAUDE.md AGENTS.md
+      run: make render-templates && git diff --exit-code
 ##[<] 🤖
