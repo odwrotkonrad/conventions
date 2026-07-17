@@ -15,6 +15,6 @@ validate-pre-commit-all:
   variables:
     CLICOLOR: "0"
   script:
-    - make run-repo-ci-precommit-all
+    - make repo-ci-precommit-all
     - git diff --exit-code HEAD
 ##[<] 🤖
