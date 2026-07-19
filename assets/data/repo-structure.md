@@ -21,6 +21,8 @@ conventions
     example
       assets
         docs-agents
+  spec-scenarios
+    example
   templates
     example
       assets
